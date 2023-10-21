@@ -29,4 +29,4 @@ Any analyses a business performs will ulyimately be constrained by the data that
 
 Data Wrangling seeks to remove the risk by ensuring data is in a reliable state before it is analyzed and leveraged. This makes it a very critical part of an analytical process.
 
-# This repository contains Data Wrangling projects in SQL.
+### This repository contains Data Wrangling projects in SQL.
