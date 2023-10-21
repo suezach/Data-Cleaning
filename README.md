@@ -1,12 +1,12 @@
 # Data-Wrangling
 Data Wrangling Portfolio Projects
 
-# "Insights are only as good as the data that informs them." #
+### "Insights are only as good as the data that informs them." #
 This means it is very important for any organisation to make sure that the Data is clean. 
 
 Data Wrangling - also called as Data Cleaning, Data Remediation or Data Munging, refers to a various processes designed to transform raw data into more readily used formats.
 
-# Steps of Data Wrangling:
+### Steps of Data Wrangling:
 1. DISCOVERY: 
       Understanding the data, familiarizing yourself with the data to conceptualize how might employ it.
 2. STRUCTURING:
@@ -20,7 +20,7 @@ Data Wrangling - also called as Data Cleaning, Data Remediation or Data Munging,
 6. PUBLISHING:
       Making your data avaliable for analysis.
 
-DATA CLEANING VS DATA WRANGLING
+### DATA CLEANING VS DATA WRANGLING
 
 Data Cleaning is removing inaccurate and inconsistent data.
 Data Wrangling is transforming raw data into a more usuable format.
