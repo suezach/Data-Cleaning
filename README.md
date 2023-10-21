@@ -20,7 +20,7 @@ Data Wrangling - also called as Data Cleaning, Data Remediation or Data Munging,
 6. PUBLISHING:
       Making your data avaliable for analysis.
 
-# DATA CLEANING VS DATA WRANGLING
+DATA CLEANING VS DATA WRANGLING
 
 Data Cleaning is removing inaccurate and inconsistent data.
 Data Wrangling is transforming raw data into a more usuable format.
