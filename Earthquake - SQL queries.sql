@@ -3,10 +3,10 @@ PROJECT GOAL: Ensure that the 'Significant Earthquale Dataset" is reliable and a
 PROJECT SKILLS: Performed Data Wrangling to transform raw data into a more usable format.
 
 STEPS TO TRANSFORM RAW DATA INTO USABLE FORMAT FOR FUTURE ANALYSIS:
-	1. Visualize the Dataset.
+	1. Data Discovery.
 		(i) Find the total number of rows in the table of the schema.
         	(ii) Check to see if there were any inconsistent data entry in the date field.
-	2. Standarize the Date column.
+	2. Standardize the Date column.
 		(I) Check to see if there were any inconsistent data entry in the date field.
 		- 1. let's find the maximum and minimum number of characters in the date field.
                 - 2. let's make sure that there are no lengths apart from the min_length 0f 8 and max_length of 24
@@ -48,7 +48,7 @@ STEPS TO TRANSFORM RAW DATA INTO USABLE FORMAT FOR FUTURE ANALYSIS:
 
 USE earthquake;
 
-/*********************************************** STEP 1 Visualize the DataSet **************************************************************************/
+/*********************************************** STEP 1: DATA DISCOVERY **************************************************************************/
 
 SELECT * FROM earthquake;
 
@@ -56,7 +56,7 @@ SELECT * FROM earthquake;
 
 SELECT count(*) AS total_rows FROM earthquake;
 
-/*********************************************** STEP 2: STANDARIZE THE DATE COLUMN*********************************************************************/
+/*********************************************** STEP 2: STANDARDIZE THE DATE COLUMN *********************************************************************/
 
 SELECT date from earthquake;
 
@@ -155,7 +155,7 @@ select date, date2 from earthquake;
 -- We now have a standarized date2 that can be use for future data analysis and visualizations.
 
 
-/*************************************************** STEP 3. STANDARIZE THE TIME COLUMN  ***************************************************************/
+/*************************************************** STEP 3. STANDARDIZE THE TIME COLUMN  ***************************************************************/
 
 -- (I) Create a new time2 column, and use CAST function to convert the intial time values from text to time.
 
@@ -208,7 +208,7 @@ SET time2 = CAST(Time as time);
 SELECT Time, time2 
 FROM earthquake;
 
-/***************************************************** STEP 4: HANDLE THE BLANK VALUES IN THE DATSET ****************************************************************/
+/***************************************************** STEP 4: HANDLE THE BLANK VALUES ****************************************************************/
 
 SELECT * FROM earthquake;
 
@@ -338,7 +338,7 @@ MODIFY COLUMN `Root Mean Square` double;
 
 SELECT * FROM earthquake;
 
-/**************************************************** STEP 5. CHECKING FOR DUPLICATES *************************************************************************/
+/**************************************************** STEP 5. CHECK FOR DUPLICATES *************************************************************************/
 
 -- (I) Use CTE to check for duplicates
 
@@ -407,7 +407,7 @@ FROM earthquake;
 
 select * from earthquake;
 
-/*********************************************** STEP 7. CHECKING FOR OUTLIERS **************************************************************************/
+/*********************************************** STEP 7. CHECK FOR OUTLIERS **************************************************************************/
 
 -- For our dataset: the data is collected between the years 1965 to 2016. And the magnitude of earthquakes recorded are above 5.5. 
 -- Hence, we can say that any date that is out of the range of our date range, would be considered as an outlier.
